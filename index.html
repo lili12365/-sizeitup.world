@@ -1,25 +1,62 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#dff5d8" />
-    <title>Size It Up | Train Your Sense of Scale</title>
+    <title>Size It Up | Daily Size Guessing Game (Free, 5 Rounds a Day)</title>
+    <meta name="description" content="Free daily size guessing game. Five rounds of real-world scale puzzles - guess the size in centimeters, lock it in, see the real answer. No sign-up." />
+    <link rel="canonical" href="https://sizeitup.world/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sizeitup.world/" />
+    <meta property="og:title" content="Size It Up | Daily Size Guessing Game" />
+    <meta property="og:description" content="Five daily real-world scale puzzles. Guess the size, lock it in, and sharpen your sense of scale." />
+    <meta property="og:image" content="https://sizeitup.world/og-image.svg" />
+    <meta property="og:image:alt" content="Size It Up daily size guessing game" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Size It Up | Daily Size Guessing Game" />
+    <meta name="twitter:description" content="Five daily real-world scale puzzles. Guess the size, lock it in, and sharpen your sense of scale." />
+    <meta name="twitter:image" content="https://sizeitup.world/og-image.svg" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebApplication",
+            "name": "Size It Up",
+            "url": "https://sizeitup.world/",
+            "description": "A free daily size guessing game with five real-world scale puzzles.",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Any",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "featureList": ["Five daily rounds", "Real-world measurement puzzles", "No sign-up required"]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "How is the Size It Up score calculated?", "acceptedAnswer": { "@type": "Answer", "text": "Your accuracy starts at 100% and drops according to the percentage difference between your guess and the real measurement. Points are accuracy multiplied by 10, so a 92% guess earns 920 points." } },
+              { "@type": "Question", "name": "Is Size It Up free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Size It Up is a free size guessing game with five daily rounds, and it does not require an account or sign-up to play." } },
+              { "@type": "Question", "name": "Does Size It Up reset daily?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The Daily 5 puzzle set is selected from the date, so a new shared set appears automatically each day. Explore mode remains available for unlimited practice." } }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div class="site-shell">
       <header class="topbar">
-        <a class="brand" href="#" aria-label="Size It Up home">
+        <a class="brand" href="./" aria-label="Size It Up home">
           <span class="brand-mark" aria-hidden="true">
             <span></span><span></span><span></span>
           </span>
           <span>size<span class="brand-accent">it</span>up</span>
         </a>
         <nav class="topnav" aria-label="Primary navigation">
-          <button class="nav-link active" data-view="play">Play</button>
-          <button class="nav-link" data-view="how">Guide</button>
-          <button class="nav-link" data-view="about">Why scale matters</button>
+          <a class="nav-link active" href="./">Play</a>
+          <a class="nav-link" href="how-to-play/">Guide</a>
+          <a class="nav-link" href="why-scale-matters/">Why scale matters</a>
         </nav>
         <button class="icon-button" id="soundToggle" type="button" aria-label="Toggle sound" title="Toggle sound">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm12.2-.7a5 5 0 0 1 0 7.4M18.7 5.8a9.5 9.5 0 0 1 0 12.4"/></svg>
@@ -114,102 +151,58 @@
             <div class="stat-divider"></div>
             <div class="stat"><span class="stat-value">1,284</span><span class="stat-label">players today</span></div>
           </div>
-        </section>
+          <nav class="home-links" aria-label="Learn more about Size It Up">
+            <a href="how-to-play/">How to play Size It Up <span aria-hidden="true">&rarr;</span></a>
+            <a href="why-scale-matters/">Why scale matters <span aria-hidden="true">&rarr;</span></a>
+          </nav>
 
-        <section class="info-view guide-view" id="howView">
-          <div class="info-intro guide-intro">
-            <p class="eyebrow">Complete player guide</p>
-            <h2>How to play, read the answer, and get better.</h2>
-            <p>Size It Up is a daily estimating game. You see an object, make a size guess in centimeters, lock it in, then use the answer to build a stronger mental ruler.</p>
-          </div>
+          <section class="home-content" aria-labelledby="rules-heading">
+            <div class="info-intro">
+              <p class="eyebrow">How the game works</p>
+              <h2 id="rules-heading">A quick size guessing game with a useful answer.</h2>
+              <p>Size It Up turns everyday objects into short, repeatable scale puzzles. You see a prompt such as a door, phone, animal, or street fixture, then estimate its height or length in centimeters. The goal is not to remember trivia. It is to make a clear prediction, compare it with a real-world reference, and leave with a better mental ruler.</p>
+            </div>
 
-          <div class="guide-example">
-            <div class="example-visual" aria-hidden="true">
-              <div class="mini-stage">
-                <div class="mini-object">
-                  <span>actual</span>
-                  <div class="silhouette door"><span class="door-knob"></span></div>
-                  <strong>200 cm</strong>
-                </div>
-                <div class="mini-vs">vs</div>
-                <div class="mini-object estimate">
-                  <span>your guess</span>
-                  <div class="silhouette door"><span class="door-knob"></span></div>
-                  <strong>176 cm</strong>
-                </div>
+            <div class="detail-section">
+              <div class="detail-copy">
+                <p class="eyebrow">Rules and scoring</p>
+                <h3>Guess the size, lock it in, then learn from the gap.</h3>
+                <p>Each Daily 5 session contains five objects. Move the slider until your estimate feels right, then select <strong>Lock in guess</strong>. Before submitting, the game keeps the answer hidden so your estimate remains a genuine test of visual intuition. After you submit, you see the actual measurement, your accuracy, the point value, and a short comparison that helps the number stick.</p>
+                <p>Scoring rewards closeness rather than speed. Accuracy begins at 100% for a perfect estimate and decreases based on the relative difference between your guess and the real answer. The point value is accuracy multiplied by 10, so an 88% estimate earns 880 points. A result that is far away is still useful: the correction shows which familiar object can become your next scale anchor.</p>
               </div>
-              <div class="mini-result"><strong>88% accurate</strong><span>Actual: 200 cm</span><span>Memory anchor: most doors are close to 2 m.</span></div>
+              <div class="mode-table">
+                <div><strong>Daily 5</strong><span>Five shared questions selected from the current date.</span></div>
+                <div><strong>Score</strong><span>Accuracy is converted into points from 0 to 1,000 per round.</span></div>
+                <div><strong>Explore</strong><span>Unlimited practice when you want to guess the size of more objects.</span></div>
+              </div>
             </div>
-            <div class="example-copy">
-              <p class="eyebrow">Example round</p>
-              <h3>A standard door</h3>
-              <p>You move the slider to 176 cm and submit. The real measurement is 200 cm, so the game shows your accuracy, the point value, and a short note that turns the number into a reusable reference.</p>
-            </div>
-          </div>
 
-          <div class="guide-grid">
-            <article class="guide-card"><span>01</span><h3>Look at the prompt</h3><p>The object name and category tell you what kind of measurement is being tested. Height is used unless the card text says otherwise.</p></article>
-            <article class="guide-card"><span>02</span><h3>Start with an anchor</h3><p>Use a known reference: a door is about 2 m, a counter is about 90 cm, and a basketball rim is 3.05 m.</p></article>
-            <article class="guide-card"><span>03</span><h3>Move the slider</h3><p>Drag the handle for big changes. Use the left and right arrow keys for one-centimeter adjustments when you want precision.</p></article>
-            <article class="guide-card"><span>04</span><h3>Lock in the guess</h3><p>Click Lock in guess or press Enter. Once submitted, the round switches from guessing to explanation.</p></article>
-            <article class="guide-card"><span>05</span><h3>Read the reveal</h3><p>The reveal shows accuracy, points, the actual size, a comparison, a memory anchor, and the measurement basis.</p></article>
-            <article class="guide-card"><span>06</span><h3>Carry the anchor forward</h3><p>The next time you see a similar object, use the learned number to estimate faster and with less drift.</p></article>
-          </div>
-
-          <div class="detail-section">
-            <div class="detail-copy">
-              <p class="eyebrow">Modes</p>
-              <h3>Daily 5 and Explore work differently.</h3>
-              <p>Daily 5 uses the current date to select five objects from the full library. Everyone gets the same daily set, and the set changes automatically tomorrow. Explore mode cycles through the full object bank for practice.</p>
+            <div class="tips-section">
+              <h3>Why a daily reset makes the game better</h3>
+              <div class="tips-list">
+                <p><strong>One shared challenge.</strong> The date-based set gives everyone playing Daily 5 the same five prompts, making scores easy to compare without making the game competitive.</p>
+                <p><strong>A small habit.</strong> Five rounds are short enough to finish in a few minutes, while the daily pause gives each answer time to become a durable reference.</p>
+                <p><strong>Fresh categories.</strong> The object library moves between home scale, sports, living things, vehicles, city objects, and much larger landmarks.</p>
+                <p><strong>Practice stays open.</strong> When you want more than five questions, Explore mode lets you continue with the full library without changing the next Daily 5 set.</p>
+              </div>
             </div>
-            <div class="mode-table">
-              <div><strong>Daily 5</strong><span>Five questions, date-based rotation, final score saved on the page.</span></div>
-              <div><strong>Explore</strong><span>Unlimited practice, full library, useful for learning object categories.</span></div>
-              <div><strong>Skip button</strong><span>The category button advances to another object when you want a fresh prompt.</span></div>
-            </div>
-          </div>
 
-          <div class="detail-section reverse">
-            <div class="score-board">
-              <div><span>Guess</span><strong>176 cm</strong></div>
-              <div><span>Actual</span><strong>200 cm</strong></div>
-              <div><span>Gap</span><strong>24 cm</strong></div>
-              <div><span>Accuracy</span><strong>88%</strong></div>
+            <div class="faq-section">
+              <h3>Size It Up FAQ</h3>
+              <details open>
+                <summary>How is the score calculated?</summary>
+                <p>Your accuracy starts at 100% and drops according to the percentage difference between your guess and the real measurement. Points are accuracy multiplied by 10, so a 92% guess earns 920 points. This means a close guess is rewarded even when it is not exact, and a perfect guess earns the maximum 1,000 points.</p>
+              </details>
+              <details>
+                <summary>Is Size It Up free?</summary>
+                <p>Yes. Size It Up is a free size guessing game with five daily rounds, and you do not need an account, payment, or sign-up to play. Your browser can open the game directly, and the Explore mode is also available for extra practice.</p>
+              </details>
+              <details>
+                <summary>Does Size It Up reset daily?</summary>
+                <p>Yes. The Daily 5 puzzle set is selected from the current date, so a new shared set appears automatically each day. Your five-round session starts over with that new set, while Explore mode remains available for unlimited practice between daily resets.</p>
+              </details>
             </div>
-            <div class="detail-copy">
-              <p class="eyebrow">Scoring</p>
-              <h3>Closer guesses earn more points.</h3>
-              <p>Accuracy is based on the difference between your estimate and the real measurement. A perfect answer is 100%. A guess that is 12% away from the true value scores about 88% accuracy and 880 points.</p>
-            </div>
-          </div>
-
-          <div class="tips-section">
-            <h3>Practical estimating tips</h3>
-            <div class="tips-list">
-              <p><strong>Use people carefully.</strong> Human height is useful, but posture and perspective can trick you.</p>
-              <p><strong>Convert to door units.</strong> For anything taller than a person, ask how many 2 m doors could stack inside it.</p>
-              <p><strong>Look for category clues.</strong> Furniture, appliances, sports objects, animals, and street fixtures follow different size conventions.</p>
-              <p><strong>Trust the correction.</strong> A bad guess is valuable if you remember the anchor it creates.</p>
-            </div>
-          </div>
-
-          <div class="faq-section">
-            <h3>Small details</h3>
-            <details open><summary>What exactly am I estimating?</summary><p>The game currently asks for height in centimeters. For animals, height means shoulder height. For objects like rackets, the displayed number is the object's vertical length.</p></details>
-            <details><summary>Why are the drawings stylized?</summary><p>The drawings are intentionally bold and readable instead of photo-realistic. The goal is to make each object recognizable at a glance while keeping the focus on scale.</p></details>
-            <details><summary>Where do the measurements come from?</summary><p>Each reveal names the basis: common residential dimensions, regulation standards, typical appliance sizes, or average object proportions. These are practical anchors, not forensic measurements of one exact model.</p></details>
-            <details><summary>Why use centimeters?</summary><p>Centimeters make small errors visible and work cleanly across tiny objects, furniture, people-scale objects, and street-scale objects.</p></details>
-          </div>
-        </section>
-
-        <section class="info-view" id="aboutView">
-          <div class="info-intro">
-            <p class="eyebrow">A tiny game for better scale</p>
-            <h2>Your world is full of hidden measurements.</h2>
-            <p>Doors, birds, bridges, and kitchen counters are all informal rulers. Size It Up helps you notice those anchors and use them to reason about new places, objects, and distances.</p>
-          </div>
-          <div class="about-note"><strong>Designed to leave you with more.</strong><span>Each round gives you a score, an explanation, and a memorable comparison. The goal is not to win a trivia round; it is to make your next visual estimate a little better.</span></div>
-          <div class="anchor-strip"><span>Useful anchors</span><strong>1 m</strong><strong>2 m</strong><strong>10 m</strong><strong>100 m</strong><span class="anchor-copy">Start with a door. Then stretch your mental ruler.</span></div>
+          </section>
         </section>
       </main>
 

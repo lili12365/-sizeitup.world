@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Size It Up - Daily Size Guessing Game</title>
+  <desc id="desc">Five daily real-world scale puzzles.</desc>
+  <rect width="1200" height="630" fill="#dff5d8"/>
+  <rect x="68" y="70" width="1064" height="490" rx="24" fill="#f6fbf0" stroke="#b9d8b5" stroke-width="3"/>
+  <g fill="#39a96b"><rect x="142" y="368" width="28" height="110" rx="10"/><rect x="184" y="298" width="28" height="180" rx="10"/><rect x="226" y="335" width="28" height="143" rx="10"/></g>
+  <text x="318" y="250" fill="#10261d" font-family="Arial, sans-serif" font-size="74" font-weight="800">Size It Up</text>
+  <text x="322" y="324" fill="#1e7048" font-family="Arial, sans-serif" font-size="34" font-weight="700">Daily size guessing game</text>
+  <text x="322" y="390" fill="#587265" font-family="Arial, sans-serif" font-size="25">Five real-world scale puzzles. No sign-up.</text>
+  <path d="M322 452h630" stroke="#b9d8b5" stroke-width="3"/>
+  <text x="322" y="500" fill="#10261d" font-family="Arial, sans-serif" font-size="24" font-weight="700">Guess the size. Lock it in. See the real answer.</text>
+</svg>
